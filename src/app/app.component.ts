@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ export class AppComponent {
   img = 'https://d500.epimg.net/cincodias/imagenes/2022/02/21/gadgets/1645453218_839118_1645453324_noticia_normal.jpg';
   btnDisabled = true;
 
+
   type  = {
     human: true,
     planet: 'earth',
@@ -20,6 +22,42 @@ export class AppComponent {
 
   names: string[] = ['Helen', 'Barbara', 'Kazel'];
   newName = '';
+  products: Product[] = [
+    {
+      name: 'dreamercatcher',
+      price: 565,
+      image: './assets/images/dreamercatcher.jpg',
+      category: 'Summer'
+    },
+    {
+      name: 'heart',
+      price: 356,
+      image: './assets/images/heart.jpg'
+    },
+    {
+      name: 'lips',
+      price: 34,
+      image: './assets/images/lips.jpg'
+    },
+    {
+      name: 'rock',
+      price: 23,
+      image: './assets/images/rock.jpg'
+    },
+    {
+      name: 'rainbow',
+      price: 34,
+      image: './assets/images/rainbow.jpg'
+    },
+    {
+      name: 'love',
+      price: 3434,
+      image: './assets/images/love.jpg'
+    }
+  ]
+
+
+
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }

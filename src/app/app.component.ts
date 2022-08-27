@@ -7,13 +7,34 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'dan';
-  age  = 39;
+  age  = 90;
   img = 'https://d500.epimg.net/cincodias/imagenes/2022/02/21/gadgets/1645453218_839118_1645453324_noticia_normal.jpg';
   btnDisabled = true;
 
   type  = {
     human: true,
     planet: 'earth',
-    yearBirth: 1984
+    yearBirth: 1984,
+    age: 80,
+  }
+
+  toggleButton() {
+    this.btnDisabled = !this.btnDisabled;
+  }
+
+  yearIncrease() {
+    this.type.age += 1;
+  }
+
+  onScroll(event: Event) {
+    const  element = event.target as HTMLElement;
+    console.log(element.scrollTop);
+
+  }
+
+  changeName(event: Event) {
+    const element = event.target as HTMLInputElement;
+    element.value;
+    this.type.planet = element.value;
   }
 }

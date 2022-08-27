@@ -1,7 +1,31 @@
+<h1>Events</h1>
+<button [disabled]="btnDisabled">Send</button>
+<button (click)="toggleButton()">toggle button</button>
+<p>Age {{ type.age }}</p>
+<button (click)="yearIncrease()">Age ++</button>
+<div class="box" (scroll)="onScroll($event)">
+  <p>Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Rerum incidunt minima
+    non facilis magni eligendi sapiente minus
+     consequuntur iusto et ducimus iste nulla sunt
+     ut animi nobis, recusandae ipsa odit!
+    Lorem ipsum dolor sit amet consectetur adipisicing
+     elit. Labore nam sequi soluta corrupti qui
+     voluptas similique ea commodi sit,
+     enim delectus eveniet minima ratione optio
+     itaque. Reprehenderit vero ullam quae.</p>
+</div>
+
+<p>Name {{ type.planet }}</p>
+<input type="text" [value]="type.planet" (keyup)="changeName($event)" />
+
+
+
+<hr>
 <h1>Properties</h1>
-<button [disabled]="btnDisabled">Enviar</button>
+<button [disabled]="btnDisabled">Send</button>
 <input type="text" [value]="type.planet"/>
-<progress max="100" [value]="age"></progress>
+<progress max="100" [value]="type.age"></progress>
 <img width="100" [src]="img" alt="image">
 <hr/>
 

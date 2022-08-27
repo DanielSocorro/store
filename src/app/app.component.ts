@@ -11,9 +11,8 @@ export class AppComponent {
   age  = 90;
   img = 'https://d500.epimg.net/cincodias/imagenes/2022/02/21/gadgets/1645453218_839118_1645453324_noticia_normal.jpg';
   btnDisabled = true;
-
-
-  type  = {
+  person  = {
+    name:'Dan',
     human: true,
     planet: 'earth',
     yearBirth: 1984,
@@ -63,7 +62,7 @@ export class AppComponent {
   }
 
   yearIncrease() {
-    this.type.age += 1;
+    this.person.age += 1;
   }
 
   onScroll(event: Event) {
@@ -75,7 +74,7 @@ export class AppComponent {
   changeName(event: Event) {
     const element = event.target as HTMLInputElement;
     element.value;
-    this.type.planet = element.value;
+    this.person.name = element.value;
   }
 
   addName() {

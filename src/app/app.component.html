@@ -1,4 +1,11 @@
-<<<<<<< HEAD
+<h1>*ngIf</h1>
+<input type="text" required  #nameInput2="ngModel" [(ngModel)]="type.planet" />
+<p *ngIf="type.planet == 'earth'">The earth</p>
+<p *ngIf="type.planet == 'jupiter' && type.age === 18; else elseBlock">The jupiter</p>
+<ng-template #elseBlock>
+  <p>else block</p>
+</ng-template>
+<hr>
 <h1>Ng Model</h1>
 <p>Planet {{ type.planet }}</p>
 <input type="text" required  #nameInput="ngModel" [(ngModel)]="type.planet" />
@@ -7,8 +14,6 @@
 <p>Valid: {{ ageInput.valid }}</p>
 
 <hr>
-=======
->>>>>>> origin/main
 <h1>Events</h1>
 <button [disabled]="btnDisabled">Send</button>
 <button (click)="toggleButton()">toggle button</button>

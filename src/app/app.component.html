@@ -1,3 +1,11 @@
+<h1>Ng Model</h1>
+<p>Planet {{ type.planet }}</p>
+<input type="text" required  #nameInput="ngModel" [(ngModel)]="type.planet" />
+<p>Valid: {{ nameInput.valid }}</p>
+<input type="number" max ="18" min="10" required  #ageInput="ngModel" [(ngModel)]="type.age" />
+<p>Valid: {{ ageInput.valid }}</p>
+
+<hr>
 <h1>Events</h1>
 <button [disabled]="btnDisabled">Send</button>
 <button (click)="toggleButton()">toggle button</button>

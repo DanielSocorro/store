@@ -15,7 +15,7 @@ export class AppComponent {
     human: true,
     planet: 'earth',
     yearBirth: 1984,
-    age: 80,
+    age: 18,
   }
 
   toggleButton() {

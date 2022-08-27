@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'dan';
-  age  = 18;
+  age  = 39;
   img = 'https://d500.epimg.net/cincodias/imagenes/2022/02/21/gadgets/1645453218_839118_1645453324_noticia_normal.jpg';
+  btnDisabled = true;
+
+  type  = {
+    human: true,
+    planet: 'earth',
+    yearBirth: 1984
+  }
 }

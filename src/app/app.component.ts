@@ -18,6 +18,8 @@ export class AppComponent {
     age: 18,
   }
 
+  names: string[] = ['Helen', 'Barbara', 'Kazel'];
+  newName = '';
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }
@@ -36,5 +38,14 @@ export class AppComponent {
     const element = event.target as HTMLInputElement;
     element.value;
     this.type.planet = element.value;
+  }
+
+  addName() {
+    this.names.push(this.newName);
+    this.newName = '';
+}
+
+  deleteName(index: number) {
+    this.names.splice(index , 1);
   }
 }

@@ -7,12 +7,14 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  widthImg = 100;
   name = 'dan';
   age  = 90;
   img = 'https://d500.epimg.net/cincodias/imagenes/2022/02/21/gadgets/1645453218_839118_1645453324_noticia_normal.jpg';
   btnDisabled = true;
   person  = {
     name:'Dan',
+    img: 'https://d500.epimg.net/cincodias/imagenes/2022/02/21/gadgets/1645453218_839118_1645453324_noticia_normal.jpg',
     human: true,
     planet: 'earth',
     yearBirth: 1984,

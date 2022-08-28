@@ -21,6 +21,11 @@ export class AppComponent {
     age: 18,
   }
 
+  register = {
+    name:'',
+    email:'',
+    password:''
+  }
   names: string[] = ['Helen', 'Barbara', 'Kazel'];
   newName = '';
   box = {
@@ -92,5 +97,9 @@ export class AppComponent {
 
   deleteName(index: number) {
     this.names.splice(index , 1);
+  }
+
+  onRegister() {
+    console.log(this.register)
   }
 }
